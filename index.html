@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BAKIT?</title>
+	<script>
+		var audio;
+
+		function playSong() {
+			audio = new Audio('/storage/emulated/0/Download/yt1s.com - Dilaw  Uhaw Tayong Lahat Official Music and Lyric Video.mp3');
+			audio.play();
+			document.getElementById('text').style.display = 'block';
+		}
+
+		function stopSong() {
+			audio.pause();
+			audio.currentTime = 0;
+		}
+	</script>
+</head>
+<body>
+
+	<h1>Bakit uhaw???? by gracian:</h1>
+
+	<button onclick="playSong()">Play Song</button>
+	<button onclick="stopSong()">Stop Song</button>
+
+	<div id="text" style="display:none;">
+		<p>Gwapu Ezekiel by: Gracian Puday</p>
+		<video width="300" height="300" controls>
+  			<source src="/storage/emulated/0/DCIM/Camera/3371c9f5b24462b5dcf68909b053b07c.mp4" type="video/mp4">
+		</video>
+		<img src="/storage/emulated/0/Pictures/Messenger/received_1164904944175359.jpeg" alt="Example Image 1" width="300" height="300">
+		<img src="/storage/emulated/0/Pictures/Messenger/received_723892145649071.jpeg" alt="Example Image 2" width="300" height="300">
+		<img src="/storage/emulated/0/Pictures/Messenger/received_824226892005255.jpeg" alt="Example Image 3" width="300" height="300">
+	</div>
+
+</body>
+</html>
